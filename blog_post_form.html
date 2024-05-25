@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Submission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: black;
+        }
+        .form-container input[type="text"],
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+        }
+        .form-container button {
+            padding: 10px ;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        .form-container .alert-btn {
+            background-color: rgba(41, 41, 191, 0.758);
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Submit a New Blog Post</h2>
+    <form>
+        <label for="title">Blog Post Title:</label>
+        <input type="text" placeholder="title" name="title" required>
+
+        <label for="author">Author's Name:</label>
+        <input type="text" placeholder="author" name="author" required>
+
+        <label for="content">Content:</label>
+        <textarea id="content" placeholder="Write here" rows="10" required></textarea>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="tech">Tech</option>
+            <option value="health">Health</option>
+            <option value="travel">Travel</option>
+            <option value="living habits">Living habits</option>
+            <option value="Study">Education</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="button" class="alert-btn" onclick="alert('Form submitted!')">Submit with Alert</button>
+    </form>
+</div>
+
+</body>
+</html>
